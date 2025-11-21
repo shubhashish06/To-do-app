@@ -27,6 +27,22 @@ class Todoer:
         todo["Done"]=True
         write=self._db_handler.write_todos(read.todo_list)
         return CurrentTodo(todo,write.error)
+    
+    def remove(self,todo_id:int)->None:
+        read=self._db_handler.read_todos()
+        if read.error:
+            return CurrentTodo({},read.error)
+        try:
+            todo=read.todo_list.pop(todo_id-1)
+        except IndexError:
+            return CurrentTodo({},ID_ERROR)
+        write=self._db_handler.write_todos(read.todo_list)
+        return CurrentTodo(todo,write.error)
+    
+    def remove_all(self)->CurrentTodo:
+        """Remove all to-dos from the database."""
+        write=self._db_handler.write_todos([])
+        return CurrentTodo({},write.error)
 
     def add(self,description:List[str],priority:int=2)->CurrentTodo:
         """Add a new to do database"""
