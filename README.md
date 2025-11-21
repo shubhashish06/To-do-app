@@ -22,3 +22,29 @@
   ```bash
   git clone https://github.com/shubhashish06/To-do-app.git
   cd To-do-app
+
+  2️⃣ Create a virtual environment (recommended)
+  python -m venv venv
+  source venv/bin/activate   # macOS/Linux
+  venv\Scripts\activate      # Windows
+  
+  
+  3️⃣ Install dependencies
+  pip install -r requirements.txt
+  
+  
+  ▶️ Usage
+  Run the app using:
+  python -m rptodo
+  
+  🛠 Tech Stack
+  	•	Python 3.10+
+  	•	Typer – CLI framework
+  	•	JSON – Local storage
+  
+  
+  🤝 Contributing
+  
+  Pull requests are welcome!
+  For major changes, please open an issue to discuss what you’d like to improve.
+  
