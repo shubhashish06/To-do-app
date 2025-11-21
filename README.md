@@ -19,23 +19,30 @@
   ## 📦 Installation
   
   ### 1️⃣ Clone the repository
-  ```bash
+```bash
   git clone https://github.com/shubhashish06/To-do-app.git
   cd To-do-app
+```
 
-  2️⃣ Create a virtual environment (recommended)
+ ### 2️⃣ Create a virtual environment (recommended)
+ ```bash
   python -m venv venv
   source venv/bin/activate   # macOS/Linux
   venv\Scripts\activate      # Windows
+```
   
   
-  3️⃣ Install dependencies
+  ###3️⃣ Install dependencies
+  ```bash
   pip install -r requirements.txt
+```
   
   
-  ▶️ Usage
+ ### ▶️ Usage
   Run the app using:
+  ```bash
   python -m rptodo
+  ```
   
   🛠 Tech Stack
   	•	Python 3.10+
